@@ -12,44 +12,45 @@
 
 </ion-header>
 
-
 <ion-content padding>
-    <ion-list>
+    <form [formGroup]="subscriptionForm" (ngSubmit)="subscribe()">
+        <ion-list>
+            <ion-item>
+                <ion-label>Nome</ion-label>
+                <ion-input type="text" [formControlName]="'name'"></ion-input>
+            </ion-item>
 
-        <ion-item>
-            <ion-label floating>Name</ion-label>
-            <ion-input type="text"></ion-input>
-        </ion-item>
+            <ion-item>
+                <ion-label>Email</ion-label>
+                <ion-input type="email" [formControlName]="'email'"></ion-input>
+            </ion-item>
 
-        <ion-item>
-            <ion-label floating>Email</ion-label>
-            <ion-input type="email"></ion-input>
-        </ion-item>
+            <ion-item>
+                <ion-label>Data de Nascimento</ion-label>
+                <ion-input type="date" [formControlName]="'birthday'"></ion-input>
+            </ion-item>
 
-        <ion-item>
-            <ion-label git >Birthday</ion-label>
-            <ion-input type="date"></ion-input>
-        </ion-item>
+            <ion-item>
+                <ion-label>Sexo</ion-label>
+                <ion-select [formControlName]="'gender'">
+                    <ion-option value="masculino">Masculino</ion-option>
+                    <ion-option value="feminino">Feminino</ion-option>
+                </ion-select>
+            </ion-item>
 
-        <ion-item>
-            <ion-label floating>Gender</ion-label>
-            <ion-select>
-                <ion-option value="man">Man</ion-option>
-                <ion-option value="woman">Woman</ion-option>
-            </ion-select>
-        </ion-item>
+            <ion-item>
+                <ion-label>Senha</ion-label>
+                <ion-input type="password" [formControlName]="'password'"></ion-input>
+            </ion-item>
 
-        <ion-item>
-            <ion-label floating>Password</ion-label>
-            <ion-input type="password"></ion-input>
-        </ion-item>
+            <ion-item>
+                <ion-label>Confirmação de senha</ion-label>
+                <ion-input type="password" [formControlName]="'passwordConfirmation'"></ion-input>
+            </ion-item>
 
-        <ion-item>
-            <ion-label floating>Password ConfirmationÎ</ion-label>
-            <ion-input type="password"></ion-input>
-        </ion-item>
-
-
-
-    </ion-list>
+            <ion-item>
+                <button ion-button block type="submit">Continuar</button>
+            </ion-item>
+        </ion-list>
+    </form>
 </ion-content>
