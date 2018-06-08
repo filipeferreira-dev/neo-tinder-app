@@ -27,7 +27,10 @@
 
             <ion-item>
                 <ion-label>Data de Nascimento</ion-label>
-                <ion-input type="date" [formControlName]="'birthday'"></ion-input>
+                <ion-datetime 
+                    displayFormat="h:mm A" 
+                    pickerFormat="h mm A" 
+                    [formControlName]="'birthday'"></ion-datetime>
             </ion-item>
 
             <ion-item>

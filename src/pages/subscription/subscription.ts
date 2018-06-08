@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { QuestionsAboutYouPage } from '../questions-about-you/questions-about-you';
 /**
  * Generated class for the SubscriptionPage page.
  *
@@ -20,7 +20,8 @@ export class SubscriptionPage {
     constructor(
         public navCtrl: NavController,
         public navParams: NavParams,
-        private formBuilder: FormBuilder
+        private formBuilder: FormBuilder,
+        private alertCtrl: AlertController
     ) {
         this.buildSubscriptionForm();
     }
@@ -53,8 +54,16 @@ export class SubscriptionPage {
     }
 
     public subscribe(): void {
-        if(!this.subscriptionForm.valid) {
-            console.log('formulário inválido...');
-        }
+        // if(!this.subscriptionForm.valid) {
+        //     let alert = this.alertCtrl.create({
+        //         title: 'Campos em branco',
+        //         message: 'Por favor preencha todos os campos antes de continuar.',
+        //         buttons: ['ok']
+        //       });
+        //       alert.present();
+        //       return;
+        // }
+
+        this.navCtrl.push(QuestionsAboutYouPage);
     }
 }
