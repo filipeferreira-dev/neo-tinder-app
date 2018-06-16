@@ -10,6 +10,7 @@ import { SubscriptionPage } from '../pages/subscription/subscription';
 import { QuestionsAboutYouPage } from '../pages/questions-about-you/questions-about-you';
 import { ProfilePage } from '../pages/profile/profile';
 import { PublicProfilePage } from '../pages/public-profile/public-profile';
+import { LoginPage } from '../pages/login/login';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PublicProfilePage } from '../pages/public-profile/public-profile';
     SubscriptionPage,
     QuestionsAboutYouPage,
     ProfilePage,
-    PublicProfilePage
+    PublicProfilePage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { PublicProfilePage } from '../pages/public-profile/public-profile';
     SubscriptionPage,
     QuestionsAboutYouPage,
     ProfilePage,
-    PublicProfilePage
+    PublicProfilePage,
+    LoginPage
   ],
   providers: [
     StatusBar,

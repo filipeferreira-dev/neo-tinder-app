@@ -27,9 +27,7 @@
 
             <ion-item>
                 <ion-label>Data de Nascimento</ion-label>
-                <ion-datetime 
-                    displayFormat="DD/MM/YYYY"
-                    [formControlName]="'birthday'"></ion-datetime>
+                <ion-datetime displayFormat="DD/MM/YYYY" [formControlName]="'birthday'"></ion-datetime>
             </ion-item>
 
             <ion-item>
@@ -49,10 +47,9 @@
                 <ion-label>Confirmação de senha</ion-label>
                 <ion-input type="password" [formControlName]="'passwordConfirmation'"></ion-input>
             </ion-item>
-
-            <ion-item>
-                <button ion-button block type="submit">Continuar</button>
-            </ion-item>
         </ion-list>
+
+        <button ion-button block type="submit">Continuar</button>
+
     </form>
 </ion-content>
