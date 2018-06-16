@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { PublicProfilePage } from '../public-profile/public-profile';
 
 /**
  * Generated class for the ProfilePage page.
@@ -10,16 +11,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-profile',
-  templateUrl: 'profile.html',
+    selector: 'page-profile',
+    templateUrl: 'profile.html',
 })
 export class ProfilePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+    constructor(public navCtrl: NavController, public navParams: NavParams) {
+    }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ProfilePage');
-  }
+    ionViewDidLoad() {
+        console.log('ionViewDidLoad ProfilePage');
+    }
+
+    public finish(): void {
+        this.navCtrl.push(PublicProfilePage);
+    }
 
 }
