@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { Question } from './question-model';
+import { ProfilePage } from '../profile/profile';
 
 /**
  * Generated class for the QuestionsAboutYouPage page.
@@ -39,6 +40,10 @@ export class QuestionsAboutYouPage {
     ionViewDidLoad() {
         console.log('ionViewDidLoad QuestionsAboutYouPage');
         console.log(this.questions);
+    }
+
+    public submit(): void{
+        this.navCtrl.push(ProfilePage);
     }
 
 }

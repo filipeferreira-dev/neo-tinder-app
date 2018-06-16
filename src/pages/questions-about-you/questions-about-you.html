@@ -13,7 +13,7 @@
 </ion-header>
 
 <ion-content padding>
-    <form [formGroup]="aboutYouForm">
+    <form [formGroup]="aboutYouForm" (ngSubmit)="submit()">
         <ion-grid>
             <ion-row *ngFor="let question of questions">
                 <ion-col col-12>
@@ -25,6 +25,11 @@
                             <ion-checkbox></ion-checkbox>
                         </ion-item>
                     </ion-list>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-12>
+                    <button ion-button block type="submit">Continuar</button>
                 </ion-col>
             </ion-row>
         </ion-grid>
