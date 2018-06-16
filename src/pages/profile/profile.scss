@@ -1,3 +1,19 @@
 page-profile {
+    .center {
+        text-align: center;
+    }
 
+    img {
+        height: 250px;
+    }
+
+    ion-textarea{
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 100px;
+    }
+
+    #descricao {
+        margin-top: 25px;
+    }
 }

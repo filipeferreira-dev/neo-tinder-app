@@ -6,13 +6,35 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>profile</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Perfil</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
-
+    <ion-grid>
+        <ion-row>
+            <h4>Foto do perfil</h4>
+            <ion-col col-12 class="center">
+                <img src="../../assets/imgs/photo.png" alt="foto do perfil">
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-12>
+                <button ion-button block>Enviar foto</button>
+            </ion-col>
+        </ion-row>
+        <ion-row id="descricao">
+            <ion-col col-12>
+                <h4>Fale um pouco sobre você</h4>
+                <ion-textarea></ion-textarea>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+                <ion-col col-12>
+                    <button ion-button block>Finalizar</button>
+                </ion-col>
+            </ion-row>
+    </ion-grid>
 </ion-content>
