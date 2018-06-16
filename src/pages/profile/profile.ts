@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PublicProfilePage } from '../public-profile/public-profile';
+import { MainTabsPage } from '../main-tabs/main-tabs';
 
 /**
  * Generated class for the ProfilePage page.
@@ -24,7 +25,7 @@ export class ProfilePage {
     }
 
     public finish(): void {
-        this.navCtrl.push(PublicProfilePage);
+        this.navCtrl.push(MainTabsPage);
     }
 
 }

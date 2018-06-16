@@ -11,6 +11,7 @@ import { QuestionsAboutYouPage } from '../pages/questions-about-you/questions-ab
 import { ProfilePage } from '../pages/profile/profile';
 import { PublicProfilePage } from '../pages/public-profile/public-profile';
 import { LoginPage } from '../pages/login/login';
+import { MainTabsPage } from '../pages/main-tabs/main-tabs';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoginPage } from '../pages/login/login';
     QuestionsAboutYouPage,
     ProfilePage,
     PublicProfilePage,
-    LoginPage
+    LoginPage,
+    MainTabsPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { LoginPage } from '../pages/login/login';
     QuestionsAboutYouPage,
     ProfilePage,
     PublicProfilePage,
-    LoginPage
+    LoginPage,
+    MainTabsPage
   ],
   providers: [
     StatusBar,

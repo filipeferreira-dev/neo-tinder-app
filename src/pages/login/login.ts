@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { MainTabsPage } from '../main-tabs/main-tabs';
 
 /**
  * Generated class for the LoginPage page.
@@ -43,27 +44,28 @@ export class LoginPage {
     }
 
     public login(): void {
-        if (!this.loginForm.valid) {
-            let alert = this.alertCtrl.create({
-                title: 'Campos em branco',
-                message: 'Por favor preencha todos os campos antes de continuar.',
-                buttons: ['ok']
-            });
-            alert.present();
-            return;
-        }
+        // TODO: UNCOMMENT
+        // if (!this.loginForm.valid) {
+        //     let alert = this.alertCtrl.create({
+        //         title: 'Campos em branco',
+        //         message: 'Por favor preencha todos os campos antes de continuar.',
+        //         buttons: ['ok']
+        //     });
+        //     alert.present();
+        //     return;
+        // }
 
-        if (this.loginForm.value.email != this.userMock.email || this.loginForm.value.password != this.userMock.password) {
-            let alert = this.alertCtrl.create({
-                title: 'Falha na autenticação',
-                message: 'E-mail e/ou senha incorretos. Por favor tente novamete.',
-                buttons: ['ok']
-            });
-            alert.present();
-            return;
-        }
+        // if (this.loginForm.value.email != this.userMock.email || this.loginForm.value.password != this.userMock.password) {
+        //     let alert = this.alertCtrl.create({
+        //         title: 'Falha na autenticação',
+        //         message: 'E-mail e/ou senha incorretos. Por favor tente novamete.',
+        //         buttons: ['ok']
+        //     });
+        //     alert.present();
+        //     return;
+        // }
 
-        console.log(this.loginForm.value)
+        this.navCtrl.push(MainTabsPage);
     }
 
 }
