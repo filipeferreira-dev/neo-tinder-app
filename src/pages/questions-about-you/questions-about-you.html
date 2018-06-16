@@ -6,19 +6,27 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>questions-about-you</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Sobre Você</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 <ion-content padding>
     <form [formGroup]="aboutYouForm">
-        <ion-list>
-            <ion-item>
-                <ion-label>Qual é o primeiro encontro ideal para você ?</ion-label>
-                <ion-input type="text" [formControlName]="'question1'"></ion-input>
-            </ion-item>
-        </ion-list>
+        <ion-grid>
+            <ion-row *ngFor="let question of questions">
+                <ion-col col-12>
+                    <p class="question">{{question.text}}</p>
+
+                    <ion-list>
+                        <ion-item *ngFor="let answer of question.answers">
+                            <ion-label>{{answer}}</ion-label>
+                            <ion-checkbox></ion-checkbox>
+                        </ion-item>
+                    </ion-list>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
     </form>
 </ion-content>
