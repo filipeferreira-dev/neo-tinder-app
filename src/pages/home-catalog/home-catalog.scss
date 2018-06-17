@@ -1,3 +1,49 @@
 page-home-catalog {
+    .progress-bar{
+        background: #e5eeff;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        height: 15px;
+        width: 100%;
 
+        .content {
+            background: #488aff;
+            border-radius: 5px;
+            width: 50%;
+            height: 100%;
+        }
+    }
+
+    .percent {
+        text-align: right;
+        float: right;
+    }
+
+    .circle-button {
+        border-radius: 75px;
+        height: 150px;
+        width: 150px;
+    }
+
+    .like-button {
+        background: #ff6148;
+        text-align: center;
+        vertical-align: center;
+        padding-top: 40px;
+        font-size: 5em;
+        color: #ffffff;
+    }
+
+    .dislike-button {
+        background: #48ffbd;
+        text-align: center;
+        vertical-align: center;
+        padding-top: 30px;
+        font-size: 5em;
+        color: #ffffff;
+    }
+
+    .actions {
+        margin-top: 40px;
+    }
 }
