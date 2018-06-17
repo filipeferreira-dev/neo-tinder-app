@@ -12,6 +12,8 @@ import { ProfilePage } from '../pages/profile/profile';
 import { PublicProfilePage } from '../pages/public-profile/public-profile';
 import { LoginPage } from '../pages/login/login';
 import { MainTabsPage } from '../pages/main-tabs/main-tabs';
+import { HomeCatalogPage } from '../pages/home-catalog/home-catalog';
+import { ChatPage } from '../pages/chat/chat';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { MainTabsPage } from '../pages/main-tabs/main-tabs';
     ProfilePage,
     PublicProfilePage,
     LoginPage,
-    MainTabsPage
+    MainTabsPage,
+    HomeCatalogPage,
+    ChatPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,9 @@ import { MainTabsPage } from '../pages/main-tabs/main-tabs';
     ProfilePage,
     PublicProfilePage,
     LoginPage,
-    MainTabsPage
+    MainTabsPage,
+    HomeCatalogPage,
+    ChatPage
   ],
   providers: [
     StatusBar,

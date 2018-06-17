@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, Tabs } from 'ionic-angular';
+import { HomeCatalogPage } from '../home-catalog/home-catalog';
+import { PublicProfilePage } from '../public-profile/public-profile';
+import { ChatPage } from '../chat/chat';
 
 /**
  * Generated class for the MainTabsPage page.
@@ -8,22 +11,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
     selector: 'page-main-tabs',
     templateUrl: 'main-tabs.html',
 })
 export class MainTabsPage {
-
-    // tab1Root = Page1;
-    // tab2Root = Page2;
-    // tab3Root = Page3;
+    tab1Root = HomeCatalogPage;
+    tab2Root = ChatPage;
+    tab3Root = PublicProfilePage;
 
     constructor(public navCtrl: NavController, public navParams: NavParams) {
-    }
-
-    ionViewDidLoad() {
-        console.log('ionViewDidLoad MainTabsPage');
     }
 
 }

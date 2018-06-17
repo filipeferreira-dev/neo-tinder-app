@@ -2,23 +2,23 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the PublicProfilePage page.
+ * Generated class for the ChatPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @Component({
-  selector: 'page-public-profile',
-  templateUrl: 'public-profile.html',
+  selector: 'page-chat',
+  templateUrl: 'chat.html',
 })
-export class PublicProfilePage {
+export class ChatPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PublicProfilePage');
+    console.log('ionViewDidLoad ChatPage');
   }
 
 }
