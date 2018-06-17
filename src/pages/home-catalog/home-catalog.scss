@@ -9,7 +9,7 @@ page-home-catalog {
         .content {
             background: #488aff;
             border-radius: 5px;
-            width: 50%;
+            width: 0%;
             height: 100%;
         }
     }
@@ -45,5 +45,12 @@ page-home-catalog {
 
     .actions {
         margin-top: 40px;
+    }
+
+}
+
+@for $i from 0 through 100 {
+    .percent-#{$i}{
+        width: $i * 1% !important;
     }
 }
