@@ -21,11 +21,11 @@ export class QuestionsAboutYouPage {
     public aboutYouForm: FormGroup;
     public questions: Array<Question> = [
         new Question('Qual é o primeiro encontro ideal para você ?', ['Balada', 'Barzinho', 'Cinema', 'Jantar romântico',])
-        , new Question('Gosta de bixinhos de estimação ?', ['Sim', 'Não', 'Prefiro Gatos', 'Prefiro Cachorros'])
+        , new Question('Gosta de bichinhos de estimação ?', ['Sim', 'Não', 'Prefiro Gatos', 'Prefiro Cachorros'])
         , new Question('Qual tipo de música você escuta ?',['Pop', 'Eletrônica', 'Rap', 'HipHop', 'Samba', 'Pagode', 'Sertanejo', 'Rock'])
     ];
 
-    constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder) {
+    constructor(public navCtrl: NavControlle, public navParams: NavParams, private formBuilder: FormBuilder) {
         this.buildForm();
     }
 
